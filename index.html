@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>function hanson</title>
+</head>
+<body>
+   <center><h1>*-- FUNCTION HANDSON --*</h1></center> 
+ <p class="ques">Q.1 Create one function with zero parameter having a console statement.</p>
+ <pre>→ function sub(){
+    let a=20; let b=10;
+    console.log(a-b);
+}
+sub();
+</pre>
+<p class="ques">Q.2 Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</p>
+<pre>→ function add(a,b){
+console.log("a+b")    
+}
+add(3,7);
+Explain: we pass the argument and call add(3,7), in function add() we received 3 and 7 than addition them and print using console.log;</pre>
+<p class="ques">Q.3 Create one arrow function.</p>
+<pre>const add=()=>{console.log(6+5)};</pre>
+<pre class="ques">Q.4  "Print output: 
+    var x = 21;
+    var girl = function () {
+        console.log(x);
+        var x = 20;
+    };
+    girl ();"</pre>
+    <pre>→ Undefine
+Explain:x=21 is global memory execution and console.log(x) is define local memory excution ,that's why its print undefine;
+    </pre>
+    <pre class="ques">Q.5 "Print output: 
+        var x = 21;
+        girl ();
+        console.log(x)
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };
+        "</pre>
+    <pre>→ undefine,21
+Explain:At first call girl() x value not define in local memory execution, it's print undefine. x value assign in global execution that;s why it's print 21 </pre>
+<pre class="ques">Q. 6 "Print output
+
+    var x = 21;
+    a();
+    b();
+    
+      function a() {
+        
+       x = 20;
+      console.log(x);
+    };
+     function b() {
+        
+        x = 40;
+       console.log(x);
+    };"</pre>
+    <pre>→ 20,40
+Explain:In the function x is not declear var,let,const.that's why it is  reassing into global value x;
+    </pre>
+<pre class="ques">Q.7 Write a function that accepts parameter n and returns factorial of n</pre>
+<pre>function factorial(n){
+    let fact=1;
+    for(let i=1;i<=n;i++)
+    {
+        fact*=i;
+
+    }
+    return fact;
+}
+let result=factorial(3);
+console.log(result);
+
+</pre>
+Day 2
+<pre class="ques">Q.1 "Guess the Output
+
+    function FindSum(a, b){
+        return a + b;
+    }
+    
+    function DisplayData(data, batch){
+        console.log(`i am from ${data} and My batch is EA${batch}`)
+    }
+    
+    DisplayData(""PrepBytes"", FindSum(10, 13));"</pre>
+    <p>→ i am from PrepBytes and my batch is EA23 </p>
+    <pre class="ques">Q.2 "Guess the output
+
+        Abc();
+        const Abc = function(){
+            let value = 20;
+            console.log(value);
+        }"</pre>
+        <p>→ Cannot access 'Abc' before initialization or  Abc is not defined
+            at </p>
+        <pre class="ques">Q.3 "Guess the output
+
+            var a = 10;
+            (function (){
+                console.log(a);
+                var a = 20;
+            })();"</pre>
+            <pre>→ undefine
+Explain: x is define in global memory execution , local executin not define that's why it is undefine
+            </pre>
+            <pre class="ques">Q.4 "Guess the Output
+                const greet =  function(name){
+                    return function(m){
+                    
+                        console.log(`Hi!! ${name}, ${m}`);
+                    }
+                }
+                  
+                const greet_message = greet('EA19');
+                greet_message(""Welcome To PrepBytes"")"</pre>
+                <pre> → Hi!! EA19, Welcome To PrepBytes</pre>
+    <script src="./script.js"></script>
+</body>
+</html>
